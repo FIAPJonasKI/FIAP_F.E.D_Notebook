@@ -1,0 +1,138 @@
+body{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0%;
+}
+/* Estilo para nosso cabeçalho */
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+}
+
+header nav li{
+    margin: 15px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav li a:hover{
+    text-decoration: underline;
+    color: bisque;
+}
+
+.experiencia{
+    background-color: white;
+}
+
+/*Estilo para banner*/
+.banner{
+    background: url(../Img/Aula13/banner02.png) no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h2{
+    font-size: 48px;
+    color: white;
+    /* Contorno preto */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.banner p{
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.banner .btn{
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.banner .btn:hover{
+    background-color: #e5533d;
+}
+
+.banner a{
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.experiencia h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+.card-grid{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: bisque;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: #333;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card h3{
+    font-size: 24px;
+    margin: 10px;
+    color: #333;
+}
+
+.card p{
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos Para Rodapé */
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p{
+    font-size: 24px;
+}

@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: url(./Background.jpg);
+    height: 1000px; 
+    background-position: center;
+    background-size: cover;
+    margin: 0px; 
+}
+
+.menu {
+    width: 100%;
+    min-height: 100px;
+    background-color: #010139ab;
+    color: yellow;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu-tittle {
+    font-size: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 20px;
+}
+
+.menu a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.Pag{
+    margin: 10px auto;
+    width: 70%;
+    min-height: 100px;
+}
+
+.Pag img {
+    border: 10px solid #1d1300;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Pag-tittle {
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    color: yellow;
+} 
+
+.Pagbox{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 10px solid #1d1300;
+}
+
+.Pag p {
+    font-size: 20px;
+    color: white;
+    margin: 10px auto;
+    width: 80%;
+    min-height: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.Pag nav ul li h1{
+    font-size: 40px;
+}
+
+.Pag h6{
+    color: white;
+}
+
+.Pag nav{ 
+    background-color: rgba(0, 0, 0, 0.801);
+    border: 10px solid #1d1300;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.Pag ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 0%;
+}
+
+.Pag li {
+    font-size: auto;
+    justify-content: center;
+    display: flex;
+    color: white;
+    margin: 5px;
+    width: 30%;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.Pag a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.bt{
+    margin: 10px;
+}
+
+.bt:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px;
+}
+
+.Pag a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.creditos{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: yellow;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.creditos-tittle {
+    font-size: 40px;
+    color: darkgray
+}
+
+.creditos ul {
+    list-style: none;
+    display: flex;
+}
+
+.creditos li {
+    font-size: 15px;
+    margin: 20px;
+    color: darkgray;
+    text-decoration: none;
+    font-weight: 800;
+}
