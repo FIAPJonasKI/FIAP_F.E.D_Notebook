@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    background-color: rgb(69, 69, 69); 
+}
+header{
+    background-color: white;
+    border: 5px solid rgb(140, 140, 140);
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    text-align: center;
+}
+.ex1{
+    background-color: white;
+    align-content: center;
+    width: 300px;
+    height: 200px auto;
+    margin: 50px auto;
+    padding: 30px;
+    border: 5px solid rgb(140, 140, 140);
+    text-align: center;
+}
+.ex2 ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+}
+.ex2 li{
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    border: 3px solid rgb(140, 140, 140);
+    background-color: white;
+    text-align: center;
+}
+.ex3{
+    text-align: center;
+}
+.ex3 nav{
+    background-color: white;
+    border: 3px solid rgb(140, 140, 140);
+    width: 250px;
+}
+.ex3 ul{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.ex3 li{
+    list-style: none;
+    padding-inline: 10px;
+}
+.ex3 img{
+    width: 50px;
+}
+.ex4 ul{list-style: none;
+}
+.ex4 .b1{
+    border: 4px solid red;
+    background-color: rgb(103, 0, 0);
+    padding: 25px;
+    margin: 35px;
+    color: white;
+    text-align: center;
+}
+.ex4 .b2{
+    border: 4px double red;
+    background-color: rgb(103, 0, 0);
+    padding: 25px;
+    margin: 35px;
+    color: white;
+    text-align: center;
+}
+.ex4 .b3{
+    border: 4px dotted red;
+    background-color: rgb(103, 0, 0);
+    padding: 25px;
+    margin: 35px;
+    color: white;
+    text-align: center;
+}
+.ex4 .b4{
+    border: 4px dashed red;
+    background-color: rgb(103, 0, 0);
+    padding: 25px;
+    margin: 35px;
+    color: white;
+    text-align: center;
+}
+.ex5 ul{
+    padding: 0px;
+}
+.ex5 li{
+    list-style: none;
+    background-color: white;
+    border: 2px solid rgb(140, 140, 140);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.ex6{
+    background-color: gold;
+    border: 10px solid rgb(255, 166, 0);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+.ex6 ul{
+    padding: 0px;
+}
+.ex6 li{
+    list-style: none;
+}
