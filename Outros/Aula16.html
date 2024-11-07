@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDANDO DE TEMA PARA DARK E LIGHT</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background-color 0.3s,color 0.3s; 
+        }
+        /*Estilo para o tema light*/
+        body.light-theme{
+            background-color: #fff;
+            color: black;
+        }
+        body.dark-theme{
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+        }
+        #btnMudarTema{
+            padding: 10px;
+            background-color: #007bff;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        #btnMudarTema:hover{
+            background-color: #00ffbf;
+        }
+        .card{
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        body.dark-theme .card{
+            background-color: #333;
+            color: white;
+        }
+        @media(max-width:769px){
+            body.dark-theme .card{
+                background-color: blue;     
+            }
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <header>
+        <h1>Altenar o tema: Dark e Light</h1>
+        <button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button>
+    </header>
+    <div class="card">
+        <h2>O que são sites Responsivos?</h2>
+        <p>Sites responsivos são aqueles que se adaptam a diferentes tamanhos de tela, 
+            proporcionando uma boa experiência de visualização em dispositivos como desktops, 
+            tablets e smartphones. O design responsivo é fundamental para garantir que o conteúdo 
+            seja acessível e atraente, independentemente do dispositivo utilizado.</p>
+    </div>
+<script>
+    function mudarTema(){
+    /*selecionar a nossa tag tema*/
+    var body = document.body;
+    if(body.classList.contains("light-theme")){
+        body.classList.remove("light-theme");
+        body.classList.add("dark-theme")
+    }
+    else{
+        body.classList.remove("dark-theme");
+        body.classList.add("light-theme")
+    }
+    }
+</script>
+</body>
+</html>

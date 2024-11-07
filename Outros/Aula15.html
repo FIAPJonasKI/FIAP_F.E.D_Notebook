@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 15</title>
+    <style>
+        body{
+                background-color: #f0f0f0;
+                padding: 20px;
+        }
+        .conteudo{
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            margin: 20px;
+        }
+        /* Média query para telas com largura maxima de 770px ou seja para dispositivos
+        maiores que smartphones*/
+        @media(max-width:770px){
+            .versao-desktop{
+                display: none;
+            }
+            h2{
+                color: red;     
+            }
+        }
+        @media(min-width:769px){
+            .versao-mobile{
+                display: none;
+            }
+            h2{
+                color: blue;
+            }
+        }
+        .texto{
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteudo versao-mobile">
+        <h2>Bem-vindo ao nosso site (versão mobile)</h2>
+        <p>está mensagem é para que seja vista apenas para dispositivos pequenos (" min width: 769px ")</p>
+    </div>
+    <div class="conteudo versao-desktop">
+        <h2>Bem-vindo ao nosso site (versão desktop)</h2>
+        <p>está mensagem é para que seja vista apenas para dispositivos pequenos (" maiores que 770px ")</p>
+    </div>
+    <div class="texto" id="texto-traduzir">
+        <p>
+            Este é um texto em português.
+            Clique no botão para traduzir para o inglês
+        </p>
+    </div>
+    <button id="btnP" onclick="mudarParaPortugues()">Traduzir para Português</button>
+    <button id="btnI" onclick="mudarParaIngles()">Traduzir para Inglês</button>
+    <script>
+        document.getElementById('btnP').style.display='none';
+        function mudarParaIngles(){
+            const texto = document.getElementById('texto-traduzir');
+            texto.innerHTML='<p> This is a text in english </p> ';
+            document.getElementById('btnI').style.display='none';
+            document.getElementById('btnP').style.display='inline-block';
+        }
+        function mudarParaPortugues(){
+            const texto = document.getElementById('texto-traduzir');
+            texto.innerHTML='<p>Este é um texto em português.</p>';
+            document.getElementById('btnP').style.display='none';
+            document.getElementById('btnI').style.display='inline-block';
+        }
+    </script>
+</body>
+</html>

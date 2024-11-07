@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/CP2.css">
+    <title>CP2 FEDE</title>
+</head>
+
+<body>
+    <!--Menu da Página-->
+    <header>
+        <h1>Evento</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <p><button class="login-btn">Login</button>/<button class="reg-btn">Registrar</button></p>
+    </header>
+    <main>
+        <!--Banner da Página-->
+        <section class="banner">
+            <div>
+                <h1>Evento</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ipsum.</p>
+                <a href="#" target="_blank">Clique aqui</a>
+            </div>
+        </section>
+        <section class="exp" id="experiencias">
+            <div class="container">
+                <h1>Experiências</h1>
+                <div class="card-grid">
+                    <!--Card 1-->
+                    <div class="card" id="card-1">
+                        <img src="Img/CP2/citylights.jpg" alt="Cidade Noturna">
+                        <h1>Experiência 1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Unde magnam iusto adipisci veniam dolorum explicabo facere?
+                            Iusto porro excepturi facilis.</p>
+                    </div>
+                    <!--Card 2-->
+                    <div class="card" id="card-2">
+                        <img src="Img/CP2/quarto.jpg" alt="Quarto">
+                        <h1>Experiência 2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Unde magnam iusto adipisci veniam dolorum explicabo facere?
+                            Iusto porro excepturi facilis.</p>
+                    </div>
+                    <!--Card 3-->
+                    <div class="card" id="card-3">
+                        <img src="Img/CP2/estrada.jpg" alt="Estrada">
+                        <h1>Experiência 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Unde magnam iusto adipisci veniam dolorum explicabo facere?
+                            Iusto porro excepturi facilis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Contato-->
+    <footer id="contato">
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li>
+                    <p>Jonas Kimio Isiki &copy; 2024</p>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <p><a href="https://github.com/FIAPJonasKI" target="_blank">GitHub</a> /
+                    <a href="https://www.linkedin.com/in/jonas-kimio-isiki-43422b275/" target="_blank">Linkedin</a> /
+                    <a href="mailto:rm560560@fiap.com.br" target="_blank">E-mail</a></p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!--Tela de Login-->
+    <div id="login" class="log">
+        <div class="log-content">
+            <span class="close-btn-l">X</span>
+            <h2>Login</h2>
+            <form>
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" name="email" required />
+                <label for="inputsenha">Senha:</label>
+                <input type="password" id="inputsenha" name="senha" required />
+                <button type="submit" class="btn">Conectar</button>
+            </form>
+        </div>
+    </div>
+    <!--Tela de Registro-->
+    <div id="reg" class="rg">
+        <div class="rg-content">
+            <span class="close-btn-r">X</span>
+            <h2>Registrar</h2>
+            <form>
+                <label for="inputName">Nome:</label>
+                <input type="text" id="inputName" name="name" required />
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" name="email" required />
+                <label for="inputTel">Telefone:</label>
+                <input type="tel" id="inputTel" name="tel" required />
+                <label for="inputsenha">Senha:</label>
+                <input type="password" id="inputsenha" name="senha" required />
+                <label for="inputsenha2">Confirmar Senha:</label>
+                <input type="password" id="inputsenha2" name="senha2" required />
+                <button type="submit" class="btn">Criar</button>
+            </form>
+        </div>
+    </div>
+    <!--Script para a tela de login e Registar-->
+    <script>
+        window.onload = function () {
+            var log = document.getElementById('login');
+            var reg = document.getElementById('reg');
+            log.style.display = 'none';
+            reg.style.display = 'none';
+            document.querySelector('.login-btn').onclick = function () {
+                log.style.display = 'block';
+            };
+            document.querySelector('.close-btn-l').onclick = function () {
+                log.style.display = 'none';
+            };
+            document.querySelector('.reg-btn').onclick = function () {
+                reg.style.display = 'block';
+            };
+            document.querySelector('.close-btn-r').onclick = function () {
+                reg.style.display = 'none';
+            };
+        }
+    </script>
+</body>
+</html>
